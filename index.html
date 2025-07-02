@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hrishil Vats | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+    }
+    .intro-label {
+      color: #66ff66;
+    }
+    .intro-heading {
+      font-size: 3.3rem;
+      margin-bottom: 1rem;
+      transform: none;
+    }
+    .name-highlight {
+      color: white;
+    }
+    .animated-roles {
+      font-size: 1.53rem;
+      font-weight: bold;
+      min-height: 2.5rem;
+      overflow: hidden;
+      position: relative;
+      text-align: left;
+      margin-top: 1rem;
+    }
+    .animated-roles .role {
+      position: absolute;
+      opacity: 0;
+      animation: fade-in-out 9s infinite;
+      width: 100%;
+      white-space: nowrap;
+      color: #66ff66;
+    }
+    .animated-roles .role:nth-child(1) { animation-delay: 0s; }
+    .animated-roles .role:nth-child(2) { animation-delay: 3s; }
+    .animated-roles .role:nth-child(3) { animation-delay: 6s; }
+
+    @keyframes fade-in-out {
+      0% { opacity: 0; transform: translateY(100%); }
+      10% { opacity: 1; transform: translateY(0); }
+      30% { opacity: 1; }
+      40% { opacity: 0; transform: translateY(-100%); }
+      100% { opacity: 0; }
+    }
+    .hero-centered {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero-text {
+      text-align: center;
+    }
+    .hero-buttons {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .timeline-section {
+      margin-top: 6rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      display: flex;
+      gap: 2rem;
+      padding: 2rem;
+      border-top: 2px solid #66ff66;
+      border-bottom: 2px solid #66ff66;
+    }
+
+    .timeline-card {
+      flex: 0 0 280px;
+      background: #1e1e1e;
+      border: 1px solid #2e2e2e;
+      border-radius: 12px;
+      padding: 1.5rem;
+      scroll-snap-align: center;
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      position: relative;
+    }
+
+    .timeline-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(102, 255, 102, 0.3);
+    }
+
+    .timeline-card .year {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #66ff66;
+      margin-bottom: 1rem;
+    }
+
+    .timeline-card .description {
+      font-size: 1rem;
+      color: #ddd;
+      line-height: 1.6;
+    }
+    .timeline-section::-webkit-scrollbar {
+      height: 8px;
+    }
+    .timeline-section::-webkit-scrollbar-track {
+      background: #1e1e1e;
+    }
+    .timeline-section::-webkit-scrollbar-thumb {
+      background: #66ff66;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  
+  <header class="hero-centered">
+    <img src="profileborder.jpg" alt="Hrishil Vats" style="width: 225px; height: 262.5px; border-radius: 40%;" />
+    <div class="hero-text">
+      <h1 class="intro-heading">
+        <span class="intro-label">Hello, I'm</span> <span class="name-highlight">Hrishil Vats</span>
+      </h1>
+      <h2 class="animated-roles">
+        <span class="role">an Operations & Supply Chain Professional</span>
+        <span class="role">an Electrical Engineer</span>
+        <span class="role">a Football (Soccer) Enthusiast</span>
+      </h2>
+      <div class="hero-buttons">
+        <a href="#about" class="cta-button">About</a>
+        <a href="#portfolio" class="cta-button">Portfolio</a>
+        <a href="#thoughts" class="cta-button">Thoughts</a>
+        <a href="#contact" class="cta-button">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p class="large-text" style="margin-bottom: 4rem;">
+      Here's a glimpse into my journey so far:
+    </p>
+    <div class="timeline-section">
+      <div class="timeline-card">
+        <div class="year">2000</div>
+        <div class="description">Born in Bangalore, India</div>
+      </div>
+      <div class="timeline-card">
+        <div class="year">2003–2004</div>
+        <div class="description">Junior and Senior Kindergarten</div>
+      </div>
+      <div class="timeline-card">
+        <div class="year">2005</div>
+        <div class="description">Moved to Mumbai</div>
+      </div>
+      <div class="timeline-card">
+        <div class="year">2005–2011</div>
+        <div class="description">Grades 1 to 5 at Pawar Public School</div>
+      </div>
+      <div class="timeline-card">
+        <div class="year">2011</div>
+        <div class="description">Moved to Vadodara</div>
+      </div>
+      <div class="timeline-card">
+        <div class="year">2011–2018</div>
+        <div class="description">Grades 6 to 12 at Navrachana School</div>
+      </div>
+      <div class="timeline-card">
+        <div class="year">2018</div>
+        <div class="description">Finished Schooling</div>
+      </div>
+      <div class="timeline-card">
+        <div class="year">2018–2022</div>
+        <div class="description">B.Tech in Electrical Engineering from PDEU</div>
+      </div>
+      <div class="timeline-card">
+        <div class="year">2022–2024</div>
+        <div class="description">Worked at Reliance Industries</div>
+      </div>
+      <div class="timeline-card">
+        <div class="year">2024–Present</div>
+        <div class="description">Pursuing Master of Engineering Management at Duke University</div>
+      </div>
+    </div>
+    <div class="about-narrative" style="margin-top: 4rem; max-width: 800px; margin-inline: auto; color: #ddd; text-align: center; font-size: 1.05rem; line-height: 1.8;">
+      <p>
+        From a young age, two worlds had me hooked: football and technology. I grew up idolizing FC Barcelona, spending weekends watching Messi glide across the pitch with grace and precision. His style of play taught me the value of vision, timing, and persistence — qualities that stayed with me off the field too. At the same time, I was the curious kid who couldn’t resist unscrewing toys just to see what was inside. I’d repurpose motors, build random contraptions, and get lost in the joy of creating something new.
+      </p>
+      <p>
+        By the time I was 12, I was already obsessed with tech. I’d stay up watching Apple’s WWDC events, fascinated by how technology could shape the world. I devoured books like <em>Steve Jobs</em> by Walter Isaacson and spent hours playing FIFA and GTA, not just for fun, but because I was curious about the systems and mechanics behind them.
+      </p>
+      <p>
+        That blend of passion led me to pursue Electrical Engineering during my undergrad, where I dove deeper into problem-solving and building real-world systems. Now, I’m at Duke University, pursuing a Master’s in Engineering Management. I’m especially interested in the intersection of technology and business, with a focus on supply chain and operations — a space where structure meets strategy and small optimizations can create massive impact.
+      </p>
+      <p>
+        Looking back, my journey has always been driven by the same instincts: curiosity, creativity, and a desire to understand how things work — and how to make them better.
+      </p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="grid-section fade-in">
+    <h2>Portfolio</h2>
+    <div class="grid">
+      <div class="card" style="text-align: center;">
+        <h3>🚧 Portfolio Under Construction!</h3>
+        <p>This section is currently being built – exciting case studies and projects will show up here soon!</p>
+        <p>Stay tuned and feel free to connect in the meantime:</p>
+        <div style="font-size: 2rem;">
+          <a href="https://x.com/HrishilV" target="_blank" style="margin: 0 10px; color: #66ff66;">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/hrishilvats/" target="_blank" style="margin: 0 10px; color: #66ff66;">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/hrishil_vats?igsh=aWVtdXd6NmxidHVw&utm_source=qr" target="_blank" style="margin: 0 10px; color: #66ff66;">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="thoughts" class="grid-section fade-in">
+    <h2>Thoughts</h2>
+    <div class="grid">
+      <div class="card" style="text-align: center;">
+        <h3>🚧 Work in Progress!</h3>
+        <p>This section is still fermenting ideas – like good coffee, it'll be worth the wait!</p>
+        <p>Meanwhile, let's connect on:</p>
+        <div style="font-size: 2rem;">
+          <a href="https://x.com/HrishilV" target="_blank" style="margin: 0 10px; color: #66ff66;">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/hrishilvats/" target="_blank" style="margin: 0 10px; color: #66ff66;">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/hrishil_vats?igsh=aWVtdXd6NmxidHVw&utm_source=qr" target="_blank" style="margin: 0 10px; color: #66ff66;">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:vatshrishil@gmail.com">vatshrishil@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/hrishilvats" target="_blank">linkedin.com/in/hrishilvats</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hrishil Vats. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  opacity: 0.85;
+}
+
+.cta-button {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  background: #76c7c0;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-nav {
+  background-color: #1f1f1f;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+#toggle-dark-mode {
+  background: none;
+  border: none;
+  color: #e0e0e0;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #76c7c0;
+  margin-bottom: 2rem;
+}
+
+.large-text {
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+footer {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 2rem;
+  color: #ccc;
+}
+
+a {
+  color: #76c7c0;
+  text-decoration: none;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
